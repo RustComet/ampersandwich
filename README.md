@@ -1,28 +1,30 @@
-== README
+# Welcome to the Capsule Digital Template App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Fork this project to get started. Then delete this top section of text and update the information below.
 
-Things you may want to cover:
+## Deploying On Heroku
 
-* Ruby version
+Using Heroku is easy, just run these commands:
 
-* System dependencies
+1. heroku create <site_name>
+2. heroku sharing:add <other_email> # hi@ben.gy or andrew@capsule.vc
+3. git push heroku
 
-* Configuration
+## Startup Framework
 
-* Database creation
+This repo already has Bootstrap pre-installed. To use Startup Framework instead, you have follow these steps:
 
-* Database initialization
+1. Comment out gem 'bootstrap-sass' from the gemfile and run bundle install.
+2. Remove //= require bootstrap from the application.js file
+3. Delete the bootstrap_and_overrides.css.scss file
+4. Download the latest copy of Startup Framework
+5. TBC
 
-* How to run the test suite
+---
 
-* Services (job queues, cache servers, search engines, etc.)
+# <site_name>
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Client's Name:
+* Client's business:
+* Basecamp URL:
+* Highrise URL:
