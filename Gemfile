@@ -45,6 +45,5 @@ gem 'slim'
 # Use Bourbon to write way less CSS
 gem 'bourbon'
 
-# USe Owl Carousel for awesome carouselness
+# Use Owl Carousel for awesome carouselness
 # gem 'owlcarousel-rails'
-# 
