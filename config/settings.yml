@@ -21,6 +21,6 @@ fb_admin:					 'Your Facebook user ID'		# Facebook insights for share data on Fa
 facebook:					 'Facebook page username' 	# '//fb.com/' already included
 twitter:					  'Twitter handle'					 # '//twitter.com/' already included
 linkedin:					 'Linkedin URL' 						# '//' already included
-google_plus:			  'Google plus URL'					#	'//' already included
-pinterest:				  'Pinterest URL'						#	'//' already included
-blog:							 'Blog URL'								 #	'//' already included
+google_plus:			  'Google plus URL'					# '//' already included
+pinterest:				  'Pinterest URL'						# '//' already included
+blog:							 'Blog URL'								 # '//' already included
