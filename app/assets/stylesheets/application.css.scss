@@ -10,12 +10,22 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *
+ *= require animate
  *= require font-awesome
+ *= require parsley
  *= require_self
  *
  */
 
-// Owl Carousel Includes
-// @import "owl.carousel";
-// @import "owl.theme";
+// Optional Extras
+// Owl Carousel       @import "owl.carousel";
+// Owl Carousel       @import "owl.theme";
+// jQuery Masonry     = require masonry/transitions
+
+@import 'bootstrap_and_overrides';
+@import 'sass_mediaquery_mixins';
+@import 'bourbon';
+
+@import 'global';
+@import 'pages';

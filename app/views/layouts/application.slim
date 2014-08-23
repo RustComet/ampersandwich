@@ -4,9 +4,11 @@ html
     = render 'layouts/metadata'
     = render 'layouts/addons'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = growlyflash_static_notices
+    = javascript_include_tag :modernizr
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    / = render 'layouts/header'
+    = render 'layouts/header'
     = yield
     / = render 'layouts/footer'

@@ -14,7 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require parsley
+//= require growlyflash/growlyflash
 //= require_tree .
 
 // Optional extras
-// Owl Carousel = owl.carousel
+// Owl Carousel       = owl.carousel
+// jQuery Masonry     = jquery.turbolinks
+// jQuery Masonry     = masonry/jquery.masonry
+// jQuery Masonry     = masonry/modernizr-transitions
