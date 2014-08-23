@@ -1,20 +1,2 @@
 header
   .container
-    nav.navbar.navbar-default.navbar-fixed-top role="navigation"
-    .container-fluid
-      .navbar-header
-        button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button"
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        = link_to root_path do
-          .navbar-brand
-            #{Settings.project_name}
-      #navbar-collapse.collapse.navbar-collapse
-        ul.nav.navbar-nav
-          li
-            = link_to 'Home', root_path
-        ul.nav.navbar-nav.navbar-right
-          li
-            = link_to 'Home', root_path
