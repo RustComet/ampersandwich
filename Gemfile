@@ -55,6 +55,8 @@ gem 'modernizr-rails'
 # gem 'parsley-rails'
 # Integrate Parsley into simple_form
 # gem 'parsley_simple_form'
+# Responsive elements < IE9
+gem 'respond-js-rails'
 
 ### FRONT-END (CSS)
 ### =================
@@ -64,10 +66,10 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass', '~> 3.1.1'
 # Add browser vendor prefixes to Bootstrap
 gem 'autoprefixer-rails'
-# Use Slim for nicer templating
-gem 'slim'
 # Media queries help manage breakpoints more easily
 gem 'sass-mediaqueries-rails'
+# Use Slim for nicer templating
+gem 'slim'
 # Use Bourbon to write way less CSS
 gem 'bourbon'
 
@@ -81,10 +83,16 @@ gem 'animate-rails'
 gem 'growlyflash'
 # Grab exact geographic locations
 # gem 'geocoder'
-# Use skrollr for parralax sccrolling
+# Gravatar for user profiles
+# gem 'gravatarify', '~> 3.0.0'
+# Gmaps for front-end address validation
+# gem 'gmaps-autocomplete-rails'
+# Use skrollr for parralax scrolling
 # gem 'skrollr-rails'
 # Use Owl Carousel for awesome carouselness
 # gem 'owlcarousel-rails'
+# Sitemap generator for AAA compliance
+# gem 'sitemap_generator'
 
 ### ENHANCEMENTS
 ### ============
