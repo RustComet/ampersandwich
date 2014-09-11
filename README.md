@@ -1,4 +1,4 @@
-# Welcome to the Capsule Digital Template App (doc version 0.0.1)
+# Welcome to the Capsule Digital Template App (doc version 0.0.2)
 
 Fork this project, then clone your fork to get started.
 
@@ -31,6 +31,12 @@ Fork this project, then clone your fork to get started.
 4. Test that your local server doesn't break and then close out the feature ('git flow feature finish adding-custom-gems')
 4. Push to staging to make sure deployment still works using 'git push staging develop:master'
 
+## Development
+
+### Server Automation
+
+* To get seamless development happening run 'guard' instead of 'rails s'
+
 ## Pushing to Heroku
 
 ### Staging
@@ -54,6 +60,29 @@ Fork this project, then clone your fork to get started.
 * 0.X.0 (Beta) is used for feature releases e.g. Beta release are publicly accessible by clients or private testers
 * X.0.0 (RCX) is used for final releases e.g. 1.0 would be project completed and delivered to client
 
-## Server Automation
+## Project Structure
 
-* To get seamless development happening run 'guard' instead of 'rails s'
+### SASS
+
+* The modules directory is reserved for Sass code that doesn't cause Sass to actually output CSS. Things like mixin declarations, functions, and variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_
