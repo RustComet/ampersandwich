@@ -10,7 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *
  *= require animate
  *= require font-awesome
  *= require_self
@@ -23,9 +22,15 @@
 // jQuery Masonry     require masonry/transitions
 // Parsley            require parsley
 
+/* variables & mixins */
+@import 'modules/all';
+
+/* component lirbaries */
 @import 'bootstrap_and_overrides';
+
+/* sass libraries */
 @import 'sass_mediaquery_mixins';
 @import 'bourbon';
 
-@import 'global';
-@import 'pages';
+/* partials */
+@import 'partials/base';

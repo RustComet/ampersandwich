@@ -21,7 +21,7 @@
 // jQuery Masonry     require jquery.turbolinks
 // jQuery Masonry     require masonry/jquery.masonry
 // jQuery Masonry     require masonry/modernizr-transitions
-// Parsley            require  parsley
+// Parsley            require parsley
 // Skrollr            require skrollr
 // Skrollr            require skrollr.ie
 // Skrollr            require skrollr.menu
