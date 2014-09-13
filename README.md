@@ -54,6 +54,8 @@ Fork this project, then clone your fork to get started.
 
 ## Version Control
 
+### Git Flow
+
 ### Versioning Syntax
 
 * 0.0.X (Alpha) is used for minor code updates and hotfixes. Alpha releases would only ever be viewed internally
