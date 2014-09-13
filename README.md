@@ -1,4 +1,4 @@
-# Welcome to the Capsule Digital Template App (doc version 0.0.3)
+# Welcome to the Capsule Digital Template App (doc version 0.0.4)
 
 Fork this project, then clone your fork to get started.
 
@@ -73,20 +73,30 @@ Git flow is used to manage development on all of our webites. You should only ev
 ### Versioning Syntax
 
 * 0.0.X (Alpha) is used for minor code updates and hotfixes. Alpha releases would only ever be viewed internally
-* 0.X.0 (Beta) is used for feature releases e.g. Beta release are publicly accessible by clients or private testers
-* X.0.0 (RCX) is used for final releases e.g. 1.0 would be project completed and delivered to client
+* 0.X.0 (Beta) is used for feature releases e.g. Beta releases are publicly accessible by clients or private testers
+* X.0.0 (RCX) is used for final releases e.g. 1.0.0 would be project completed and delivered to client
 
 ## Project Structure
 
 ### SASS
 
-CSS required through should be plasced in the aplication.css.scss folder. Everything else lives in one of the following directories:
+CSS required for gems through should be placed in the aplication.css.scss folder. Everything else lives in one of the following directories:
 
 * The 'modules' directory is reserved for Sass code that doesn't cause Sass to actually output CSS. Things like mixins, @extend components, and variables.
 * The 'partials' directory is where you'll spend most of your time, the layouts folder covers global styling (header, application, footer, etc), and each controller has it's folder for it's respective styles.
 * The 'vendor' directory includes any overrides for modules included thorugh gem files or the vendor directory such as devise views and growlflash notifications.
 
-If you add files, remembers to include them in their directory's (or sub-directory's) _base or _all sass partials to include them in the application. Also, make sure you're familiar with Bootstrap's variables to minimise ocvveriding already declared styles.
+If you add files, remembers to include them in their directory's (or sub-directory's) _base or _all sass partials to include them in the application. Also, make sure you're familiar with Bootstrap's variables to minimise ovveriding already declared styles.
+
+## To Do
+
+* RSpec tests
+* Coffee script folder structure
+* Sass default components
+* EC2 & S3 (rubber)
+* Continuous integration (Travis)
+* Segment.io installed
+* New Relic installed
 
 
 
@@ -105,4 +115,5 @@ If you add files, remembers to include them in their directory's (or sub-directo
 
 
 
-_
+
+#
