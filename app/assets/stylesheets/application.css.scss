@@ -25,12 +25,13 @@
 /* variables & mixins */
 @import 'modules/all';
 
-/* component libraries */
-@import 'bootstrap_and_overrides';
-
-/* sass libraries */
-@import 'sass_mediaquery_mixins';
+/* front-end libraries | nb// order and position is important */
+@import 'bootstrap';
+@import 'media-queries';
 @import 'bourbon';
 
 /* partials */
 @import 'partials/base';
+
+/* vendor */
+@import 'vendor/all';
