@@ -83,6 +83,9 @@ GEM
     eventmachine (1.0.3)
     execjs (2.2.1)
     ffi (1.9.3)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
@@ -280,6 +283,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.1.1)
   bourbon
   coffee-rails (~> 4.0.0)
+  figaro
   font-awesome-rails
   growlyflash
   guard

@@ -143,7 +143,7 @@ gem 'rails_config'
 # Use devise_invitable manages user-to-user invitations
 # gem 'devise_invitable'
 # Figaro manages environment variables
-# gem 'figaro'
+gem 'figaro'
 # User model/controller authentication management
 # gem 'cancan'
 # Use omniauth for third party authentication
