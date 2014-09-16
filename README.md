@@ -31,6 +31,10 @@ Fork this project, then clone your fork to get started.
 4. Test that your local server doesn't break and then close out the feature ('git flow feature finish adding-custom-gems')
 4. Push to staging to make sure deployment still works using 'git push staging develop:master'
 
+### Environment variables
+
+Environment variables are managed through the Figaro gem. Figaro more consistent and secure alterative to secrets.yml. All environment variables are stored in config/application.yml, and you can easily push all of the variables to Heroku using 'rake figaro:heroku[project-name-environment]' where you replace 'project-name-environment' with your app's Heroku project name.
+
 ## Development
 
 ### Server Automation
