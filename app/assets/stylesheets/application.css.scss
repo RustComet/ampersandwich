@@ -23,15 +23,16 @@
 // Parsley            require parsley
 
 /* variables & mixins */
-@import 'modules/all';
+@import "modules/all";
 
 /* front-end libraries | nb// order and position is important */
-@import 'bootstrap';
-@import 'media-queries';
-@import 'bourbon';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "media-queries";
+@import "bourbon";
 
 /* partials */
-@import 'partials/base';
+@import "partials/base";
 
 /* vendor */
-@import 'vendor/all';
+@import "vendor/all";
