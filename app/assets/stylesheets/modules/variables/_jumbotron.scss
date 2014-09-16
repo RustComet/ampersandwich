@@ -1,0 +1,9 @@
+//== Jumbotron
+//
+//##
+
+$jumbotron-padding:              30px;
+$jumbotron-color:                white;
+$jumbotron-bg:                   transparentize($gray-lighter, 1.0);
+$jumbotron-heading-color:        inherit;
+$jumbotron-font-size:            ceil(($font-size-base * 2.0));

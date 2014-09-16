@@ -45,12 +45,14 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer',        platforms: :ruby
+# Use modernizr to detect native browser features
+gem 'modernizr-rails'
+# Responsive elements < IE9
+gem 'respond-js-rails'
 # Use the JQuery Masonry gem to organise the listings
 # gem 'masonry-rails'
 # JQuery UI Library
 # gem 'jquery-ui-rails'
-# Use modernizr to detect native browser features
-gem 'modernizr-rails'
 # Use parsely for frontend validation
 # gem 'parsley-rails'
 # Integrate Parsley into simple_form
@@ -61,13 +63,13 @@ gem 'modernizr-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Using Bootstrap to make frontend dev super easy
-gem 'bootstrap-sass', '~> 3.1.1'
+gem 'bootstrap-sass', '~> 3.2.0'
 # Add browser vendor prefixes to Bootstrap
 gem 'autoprefixer-rails'
-# Use Slim for nicer templating
-gem 'slim'
 # Media queries help manage breakpoints more easily
 gem 'sass-mediaqueries-rails'
+# Use Slim for nicer templating
+gem 'slim'
 # Use Bourbon to write way less CSS
 gem 'bourbon'
 
@@ -81,10 +83,16 @@ gem 'animate-rails'
 gem 'growlyflash'
 # Grab exact geographic locations
 # gem 'geocoder'
-# Use skrollr for parralax sccrolling
+# Gravatar for user profiles
+# gem 'gravatarify', '~> 3.0.0'
+# Gmaps for front-end address validation
+# gem 'gmaps-autocomplete-rails'
+# Use skrollr for parralax scrolling
 # gem 'skrollr-rails'
 # Use Owl Carousel for awesome carouselness
 # gem 'owlcarousel-rails'
+# Sitemap generator for AAA compliance
+# gem 'sitemap_generator'
 
 ### ENHANCEMENTS
 ### ============
@@ -108,7 +116,7 @@ gem 'rails_config'
 # gem 'acts-as-taggable-on'
 # Ransack helps you filter and sort lists
 # gem 'ransack'
-# Redirect all host names to teh canonical host
+# Redirect all host names to the canonical host
 # gem 'rack-canonical-host'
 
 ### SERVICES
@@ -130,12 +138,12 @@ gem 'rails_config'
 
 ### BACK-END
 ### ========
+# Figaro manages environment variables
+gem 'figaro'
 # Use devise for users
 # gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 # Use devise_invitable manages user-to-user invitations
 # gem 'devise_invitable'
-# Figaro manages environment variables
-# gem 'figaro'
 # User model/controller authentication management
 # gem 'cancan'
 # Use omniauth for third party authentication
@@ -158,6 +166,8 @@ group :development, :test do
   gem 'guard-migrate', '~> 1.1.0', require: false
   # use livereload plugin for Chrome to not hit the refresh button ever again
   gem 'guard-livereload', require: false
+  # stop server, run bundle install, then start server when gemfile is updated
+  gem 'guard-bundler', require: false
   # Prevent terminal from filling up with asset requests
   gem 'quiet_assets'
   # make the Rails console much friendlier to work with

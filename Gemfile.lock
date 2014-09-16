@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ctran/annotate_models.git
-  revision: 9634ea6e67851d4a9a4d0b89597a6a9d3fc4d1f4
+  revision: 038b13c04e575cc0f0c89c702c994166c7dc9955
   specs:
     annotate (2.6.5)
       activerecord (>= 2.3.0)
@@ -39,7 +39,7 @@ GEM
     animate-rails (1.0.7)
       rails
     arel (5.0.1.20140414130214)
-    autoprefixer-rails (3.0.0.20140821)
+    autoprefixer-rails (3.1.0.20140911)
       execjs
     awesome_print (1.2.0)
     better_errors (2.0.0)
@@ -48,15 +48,15 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.1.1.1)
+    bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
     builder (3.2.2)
     callsite (0.0.11)
-    celluloid (0.15.2)
-      timers (~> 1.1.0)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -64,9 +64,10 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.7.1)
+    coffee-script-source (1.8.0)
     columnize (0.8.9)
-    coolline (0.4.4)
+    coolline (0.5.0)
+      unicode_utils (~> 1.4)
     debug_inspector (0.0.2)
     debugger (1.6.8)
       columnize (>= 0.3.1)
@@ -83,7 +84,10 @@ GEM
     eventmachine (1.0.3)
     execjs (2.2.1)
     ffi (1.9.3)
-    font-awesome-rails (4.1.0.0)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
+    font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
     grit (2.5.0)
@@ -99,6 +103,9 @@ GEM
       lumberjack (~> 1.0)
       pry (>= 0.9.12)
       thor (>= 0.18.1)
+    guard-bundler (2.0.0)
+      bundler (~> 1.0)
+      guard (~> 2.2)
     guard-livereload (2.3.0)
       em-websocket (~> 0.5)
       guard (~> 2.0)
@@ -111,6 +118,7 @@ GEM
       puma
     hike (1.2.3)
     hirb (0.7.2)
+    hitimes (1.2.2)
     http_parser.rb (0.6.0)
     i18n (0.6.11)
     jazz_hands (0.5.2)
@@ -128,10 +136,10 @@ GEM
     jbuilder (2.1.3)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
-    jquery-rails (3.1.1)
+    jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    jquery-turbolinks (2.0.2)
+    jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
       turbolinks
     json (1.8.1)
@@ -139,7 +147,7 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.2.0)
       launchy (~> 2.2)
-    libv8 (3.16.14.3)
+    libv8 (3.16.14.7)
     listen (2.7.9)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -154,7 +162,7 @@ GEM
       railties (>= 3.0.0, < 5.0.0)
     method_source (0.8.2)
     mime-types (1.25.1)
-    minitest (5.4.0)
+    minitest (5.4.1)
     modernizr-rails (2.7.1)
     multi_json (1.10.1)
     pg (0.17.1)
@@ -182,7 +190,7 @@ GEM
     pry-stack_explorer (0.4.9.1)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
-    puma (2.9.0)
+    puma (2.9.1)
       rack (>= 1.1, < 2.0)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
@@ -217,9 +225,11 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    rdoc (4.1.1)
+    rdoc (4.1.2)
       json (~> 1.4)
     ref (1.0.5)
+    respond-js-rails (1.4.2.1)
+      railties (~> 4.0, < 5.0)
     sass (3.2.19)
     sass-mediaqueries-rails (1.3)
       sass (>= 3.2.0)
@@ -241,7 +251,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.1.3)
+    sprockets-rails (2.1.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
@@ -253,7 +263,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    timers (1.1.0)
+    timers (4.0.1)
+      hitimes
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -264,6 +275,7 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unicode_utils (1.4.0)
     yard (0.8.7.4)
 
 PLATFORMS
@@ -275,12 +287,14 @@ DEPENDENCIES
   autoprefixer-rails
   better_errors
   binding_of_caller
-  bootstrap-sass (~> 3.1.1)
+  bootstrap-sass (~> 3.2.0)
   bourbon
   coffee-rails (~> 4.0.0)
+  figaro
   font-awesome-rails
   growlyflash
   guard
+  guard-bundler
   guard-livereload
   guard-migrate (~> 1.1.0)
   guard-puma
@@ -297,6 +311,7 @@ DEPENDENCIES
   rails (= 4.1.4)
   rails_12factor
   rails_config
+  respond-js-rails
   sass-mediaqueries-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

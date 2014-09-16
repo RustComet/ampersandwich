@@ -10,7 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *
  *= require animate
  *= require font-awesome
  *= require_self
@@ -20,12 +19,20 @@
 // Optional Extras
 // Owl Carousel       @import "owl.carousel";
 // Owl Carousel       @import "owl.theme";
-// jQuery Masonry     = require masonry/transitions
-// Parsley            = require parsley
+// jQuery Masonry     require masonry/transitions
+// Parsley            require parsley
 
-@import 'bootstrap_and_overrides';
-@import 'sass_mediaquery_mixins';
-@import 'bourbon';
+/* variables & mixins */
+@import "modules/all";
 
-@import 'global';
-@import 'pages';
+/* front-end libraries | nb// order and position is important */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "media-queries";
+@import "bourbon";
+
+/* partials */
+@import "partials/base";
+
+/* vendor */
+@import "vendor/all";
