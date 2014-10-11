@@ -1,4 +1,52 @@
-section.hero
-  .container
-    h1 #{Settings.project_name}
-    p #{Settings.one_liner}
+section.hero#page-top
+  section.first
+    = image_tag "pickle.jpg", class: "profile-img round"
+    .social-icons
+      span
+        a href='http://fb.com/#{Settings.facebook}'
+          .i.fa.fa-facebook.fa-2x
+      span
+        a href="http://twitter.com/#{Settings.twitter}"
+          .i.fa.fa-twitter.fa-2x
+      span
+        a href="http://linkedin.com/#{Settings.linkedin}"
+          .i.fa.fa-linkedin.fa-2x
+      h1 #{Settings.project_name}
+      p #{Settings.one_liner}
+
+
+  section.second#about
+      #bio
+        h1 About
+        p
+        | Isaac Norman began his life in the small town of Yackandandah, Victoria.Bill clinton ate two bowls middle-aged lycra clad cyclists, rooftop bars melbourne central black is alway in fashion temper trap formula one grand prix, don't paint over the banksy's presets the saints food bloggers swanston, lygon street spruikers the emerald peacock dandenong spring racing carnival melbourne cricket ground, etihad stadium pellegrini's moomba
+        p
+        | Spring racing carnival chapel street, graffiti cumulus inc prahran hipsters werribee wildlife melbourne cricket ground, melb food bloggers victoria street dodgies NGV culture fix bourke st mall, carlton temper trap lygon street spruikers mamasita trams, bill clinton ate two bowls the bulldogs spiegeltent
+
+  section#contact
+    .container
+      .row
+        .col-lg-12.text-center
+          h2 Contact Me
+          hr.star-primary
+      .row
+        .col-lg-8.col-lg-offset-2
+          form role="form"
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                label for="name"  Name
+                input.form-control name="name" placeholder="Name" type="text"
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                label for="email"  Email Address
+                input.form-control name="email" placeholder=("Email Address") type="email"
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                label for="message"  Message
+                textarea.form-control placeholder="Message" rows="5"
+            br
+              .row
+                .form-group.col-xs-12
+                  button.btn.btn-lg.btn-success type="submit"  Send
+
+

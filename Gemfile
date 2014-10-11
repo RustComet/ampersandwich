@@ -4,7 +4,7 @@ ruby '2.1.1'
 ### RAILS
 ### =====
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '4.1.6'
 
 ### API
 ### ===
@@ -52,7 +52,7 @@ gem 'respond-js-rails'
 # Use the JQuery Masonry gem to organise the listings
 # gem 'masonry-rails'
 # JQuery UI Library
-# gem 'jquery-ui-rails'
+gem 'jquery-ui-rails'
 # Use parsely for frontend validation
 # gem 'parsley-rails'
 # Integrate Parsley into simple_form
