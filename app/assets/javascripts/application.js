@@ -12,10 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require growlyflash/growlyflash
+//= require jquery.easing
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require jquery.turbolinks
-//= require growlyflash/growlyflash
 //= require_tree .
 
 // Optional extras

@@ -26,8 +26,10 @@ jQuery(document).ready ->
         target = (if target.length then target else $("[name=" + @hash.slice(1) + "]"))
         if target.length
           $("html,body").animate
-            scrollTop: target.offset().top
-          , 1000
+            scrollTop: target.offset().top, {
+              easing: 'easeInOutExpo',
+              duration: 1500
+            }
           false
 
     return

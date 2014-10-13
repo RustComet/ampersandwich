@@ -14,7 +14,7 @@ jQuery ->
   $.bootstrapGrowl.defaults = $.extend on, $.bootstrapGrowl.defaults,
 
     # Box width (number or css-like string, etc. "auto")
-    width:       250
+    width:       "auto"
 
     # Auto-dismiss timeout. Set it to 0 if you want to disable auto-dismiss
     delay:       4000
@@ -39,7 +39,7 @@ jQuery ->
       success: 'success'
 
     # Horizontal aligning (left, right or center)
-    align:       'right'
+    align:       'center'
 
     # Margin from the closest side
     alignAmount: 20

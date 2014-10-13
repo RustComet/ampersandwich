@@ -31,22 +31,24 @@ section.hero#page-top
           hr.star-primary
       .row
         .col-lg-8.col-lg-offset-2
-          form role="form"
+          =simple_form_for (@inquiry) do |f|
+            / = f.label :name
             .row
               .form-group.col-xs-12.floating-label-form-group
-                label for="name"  Name
-                input.form-control name="name" placeholder="Name" type="text"
+                = f.input :name, input_html: { class: "form-control", placeholder: "Name" }
             .row
               .form-group.col-xs-12.floating-label-form-group
-                label for="email"  Email Address
-                input.form-control name="email" placeholder="Email Address" type="email"
+                = f.input :email_address, input_html: { class: "form-control", placeholder: "Email Address"}
             .row
               .form-group.col-xs-12.floating-label-form-group
-                label for="message"  Message
-                textarea.form-control placeholder="Message" rows="5"
+                = f.input :message, input_html: { class: "form-control", placeholder: "Message", rows: 5 }
             br
               .row
                 .form-group.col-xs-12
-                  button.btn.btn-lg.btn-success type="submit"  Send
+                  button.btn.btn-lg.btn-success type="submit" Send
 
-
+  section#blog
+    .container
+      .col-lg-12.text-center
+        h1 Blog
+        hr.star-primary

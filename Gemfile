@@ -53,6 +53,8 @@ gem 'respond-js-rails'
 # gem 'masonry-rails'
 # JQuery UI Library
 gem 'jquery-ui-rails'
+# JQuery Rasing
+gem 'jquery-easing-rails'
 # Use parsely for frontend validation
 # gem 'parsley-rails'
 # Integrate Parsley into simple_form
@@ -99,7 +101,7 @@ gem 'growlyflash'
 # Rails Config makes it easier to make application wide changes
 gem 'rails_config'
 # Use simple form to simplify form building
-# gem 'simple_form'
+gem 'simple_form'
 # Use will paginate to add continuous scroll to JQuery Masonry
 # gem 'will_paginate', '~> 3.0.5'
 # Use will paginate bootstrap to work with Bootstrap
