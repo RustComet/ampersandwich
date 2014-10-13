@@ -56,9 +56,9 @@ gem 'jquery-ui-rails'
 # JQuery Rasing
 gem 'jquery-easing-rails'
 # Use parsely for frontend validation
-# gem 'parsley-rails'
+gem 'parsley-rails'
 # Integrate Parsley into simple_form
-# gem 'parsley_simple_form'
+gem 'parsley_simple_form'
 
 ### FRONT-END (CSS)
 ### =================

@@ -4,9 +4,9 @@ class InquiriesController < ApplicationController
     @inquiry = Inquiry.new(inquiry_params)
 
     if @inquiry.save
-      return redirect_to root_path, flash: {notice: "Your inquiry has been sent. Thank you"}
+      return redirect_to root_path, flash: {success: "Your enquiry has been sent. Thank you"}
     else
-
+      redirect_to root_path, flash: { notice: "There was an error submitting your enquiry"}
     end
   end
 

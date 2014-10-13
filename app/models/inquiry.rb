@@ -11,4 +11,7 @@
 #
 
 class Inquiry < ActiveRecord::Base
+
+  # Validations
+  validates :name, :email_address, :message, presence: true
 end

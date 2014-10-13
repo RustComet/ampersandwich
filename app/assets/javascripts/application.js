@@ -17,6 +17,7 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require jquery.turbolinks
+//= require parsley
 //= require_tree .
 
 // Optional extras
@@ -26,7 +27,6 @@
 // jQuery Masonry     require masonry/modernizr-transitions
 // jQuery Masonry     require masonry/jquery.imagesloaded.min
 // jQuery Masonry     require masonry/jquery.infinitescroll.min
-// Parsley            require parsley
 // Skrollr            require skrollr
 // Skrollr            require skrollr.ie
 // Skrollr            require skrollr.menu

@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  form_validation:
+    message:
+      minlength: "Messages should be at least 10 characters long"

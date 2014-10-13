@@ -216,6 +216,12 @@ GEM
     modernizr-rails (2.7.1)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
+    parsley-rails (2.0.5.0)
+      railties (>= 3.0.0)
+    parsley_simple_form (0.1.2)
+      parsley-rails
+      rails (> 3.2)
+      simple_form
     pg (0.17.1)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
@@ -393,6 +399,8 @@ DEPENDENCIES
   letter_opener
   meta_request
   modernizr-rails
+  parsley-rails
+  parsley_simple_form
   pg
   puma
   quiet_assets
