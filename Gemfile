@@ -143,7 +143,7 @@ gem 'simple_form'
 # Figaro manages environment variables
 gem 'figaro'
 # Use devise for users
-# gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 # Use devise_invitable manages user-to-user invitations
 # gem 'devise_invitable'
 # User model/controller authentication management
@@ -154,6 +154,14 @@ gem 'figaro'
 # gem 'omniauth-twitter'
 # gem 'omniauth-linkedin'
 # gem 'omniauth-google-oauth2'
+
+### ADMIN INTERFACE
+### ===============
+# ActiveAdmin for your backend
+gem 'activeadmin', github: 'gregbell/active_admin'
+# Flatten ActiveAdmin out and make it look better
+gem 'flattened_active_admin'
+
 
 ### DEVELOPMENT
 ### ===========
@@ -178,8 +186,8 @@ group :development, :test do
   ### TESTING
   ### =======
   # use rspec for BDD (behaviour-driven development)
-  # gem 'rspec-rails', '~> 3.0.0'
-  # gem 'guard-rspec'
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'guard-rspec'
   # use Capybara for ABT (automated browser testing)
   # gem 'capybara'
   # spork makes running tests faster by forking the app beforehand
