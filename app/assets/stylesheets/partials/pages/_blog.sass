@@ -3,15 +3,14 @@
     width: 60%
     margin: 100px auto
     text-align: left
-    @include iphone5
-      width: 90%
-
-    @include iphone4
+    @include max-screen(750px)
       width: 90%
 
 
     h1
       font-size: 28px
+      @include max-screen(750px)
+        margin-left: 0px
 
     h5
       margin-left: 20px
@@ -19,3 +18,5 @@
 
     p
       font-weight: 100
+      @include max-screen(750px)
+        font-size: 16px
