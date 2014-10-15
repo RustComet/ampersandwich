@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   resources :inquiries
+  get '/blog', to: 'posts#index', as: 'blog'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,12 @@
+section.hero#page-top
+  section
+    .container
+      .blog.hero
+        - @posts.each do |post|
+
+          .entry
+            h1 = post.try(:title)
+            # h5 = post.created_at.strftime('%d %B %Y')
+            p = post.try(:body).try(:html_safe)
+
+

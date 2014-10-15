@@ -1,0 +1,21 @@
+doctype html
+| <!--[if lt IE 8]><html class="no-js preload lt-ie10 lt-ie9 lt-ie8 ie-suck"><![endif]-->
+| <!--[if IE 8]><html class="no-js preload lt-ie10 lt-ie9 ie-8"><![endif]-->
+| <!--[if IE 9]><html class="no-js preload lt-ie10 ie-9"><![endif]-->
+| <!--[if gt IE 9]><!-->
+html.no-js xml:lang="en" lang="en"
+  | <!--<![endif]-->
+  head
+    = render 'layouts/metadata'
+    = render 'layouts/icons'
+    = render 'layouts/addons'
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag :modernizr
+    = render 'layouts/browser'
+    = javascript_include_tag 'application'
+    = growlyflash_static_notices
+    = csrf_meta_tags
+  body
+    = render 'layouts/blog_header'
+    = yield
+    = render 'layouts/footer'

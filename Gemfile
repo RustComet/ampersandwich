@@ -161,7 +161,8 @@ gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'activeadmin', github: 'gregbell/active_admin'
 # Flatten ActiveAdmin out and make it look better
 gem 'flattened_active_admin'
-
+# HTML text editing in rails
+gem 'active_admin_editor'
 
 ### DEVELOPMENT
 ### ===========
