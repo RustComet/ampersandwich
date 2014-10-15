@@ -1,4 +1,53 @@
-section.hero
-  .container
-    h1 #{Settings.project_name}
-    p #{Settings.one_liner}
+section.hero#page-top
+  section.first
+    = image_tag "pickle.jpg", class: "profile-img round"
+    .social-icons
+      span
+        a href='http://fb.com/#{Settings.facebook}'
+          .i.fa.fa-facebook.fa-2x
+      span
+        a href="http://twitter.com/#{Settings.twitter}"
+          .i.fa.fa-twitter.fa-2x
+      span
+        a href="http://linkedin.com/#{Settings.linkedin}"
+          .i.fa.fa-linkedin.fa-2x
+      h1 #{Settings.project_name}
+      p #{Settings.one_liner}
+
+
+  section.second#about
+      #bio
+        h1 About
+        p
+        | My story is a pretty straightforward one. I used to work in hospitality, now I am a developer.
+        p
+        | I grew up in a small country town, before moving to Melbourne to work in the restaurant industry. At one point I was a restaurant supervisor for Andrew McConnell, and helped him open Moon Under Water in Fitzroy. Although I have left the industry professionally I remain attached to the culture and still have a passion for food and wine.
+        p
+        | I am now a full-time Ruby/Rails developer, dabbling occasionally in iOS and anything else that takes my fancy. I studied Engineering and IT at ANU in Canberra, but lets just say that university just wasn't for me, and therefore I am self taught. I now work for a digital production company in Melbourne, spending my days between writing code and trying to work out just how far I can push our office's 3D printer.
+        p
+        | This site is my home on the internet.
+        p
+        | I am not very good at keeping a blog but in the menu bar is my latest attempt at trying. I can be contacted using the sheet below, whether you have feedback for the site or just want to know anything about how I got into this whole developer thing.
+
+  section#contact
+    .container
+      .row
+        .col-lg-12.text-center
+          h1 Contact Me
+          hr.star-primary
+      .row
+        .col-lg-8.col-lg-offset-2
+          = parsley_form_for(@inquiry) do |f|
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                = f.input :name, input_html: { class: "form-control", placeholder: "Name" }
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                = f.input :email_address, type: "email", input_html: { class: "form-control", placeholder: "Email Address"}
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                = f.input :message, minlength: 10, input_html: { class: "form-control", placeholder: "Message", rows: 5 }
+            br
+              .row
+                .form-group.col-xs-12
+                  = f.button :submit, label: "Send", class: "btn btn-lg btn-success"

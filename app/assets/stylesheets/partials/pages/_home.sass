@@ -1,0 +1,73 @@
+/* Write your SASS! */
+
+// global
+html, body
+  height: 100%
+
+body
+  font-family: $font-family-sans-serif
+
+  // main content
+  section
+    text-align: center
+    padding-top: 100px
+
+    // typography
+    h1
+      margin: 20px
+      font-weight: 100
+
+    p
+      font-size: 18px
+      max-width: 620px
+      margin: 0 auto
+      line-height: 1.5em
+      margin-bottom: 20px
+
+    a
+      text-decoration: none
+
+
+      .fa
+        padding: 10px
+        color: #ccc
+
+        &:hover
+          color: $brand-primary
+
+    img
+      max-height: 180px
+      margin-bottom: 10px
+      border-radius: 90px
+
+    .btn
+      font-size: 18px
+      padding: 8px 34px
+      border-radius: 24px
+
+    .btn-primary
+      @extend .btn
+      background-color: transparent
+      color: $brand-primary
+      border: solid 2px $brand-primary
+
+      &:hover
+        color: white
+        background-color: $brand-primary
+
+  .first
+    // background: url("bg.jpg")
+    background-position: 0 0
+    background-repeat: no-repeat
+
+  .second
+    background: #68B8DB
+    display: block
+    padding-bottom: 200px
+
+    #bio
+      color: #FFF
+      display: block
+      margin: 0 auto
+      text-align: center
+      max-width: 80%

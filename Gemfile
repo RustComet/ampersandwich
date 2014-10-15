@@ -4,7 +4,7 @@ ruby '2.1.1'
 ### RAILS
 ### =====
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '4.1.6'
 
 ### API
 ### ===
@@ -52,11 +52,13 @@ gem 'respond-js-rails'
 # Use the JQuery Masonry gem to organise the listings
 # gem 'masonry-rails'
 # JQuery UI Library
-# gem 'jquery-ui-rails'
+gem 'jquery-ui-rails'
+# JQuery Rasing
+gem 'jquery-easing-rails'
 # Use parsely for frontend validation
-# gem 'parsley-rails'
+gem 'parsley-rails'
 # Integrate Parsley into simple_form
-# gem 'parsley_simple_form'
+gem 'parsley_simple_form'
 
 ### FRONT-END (CSS)
 ### =================
@@ -99,7 +101,7 @@ gem 'growlyflash'
 # Rails Config makes it easier to make application wide changes
 gem 'rails_config'
 # Use simple form to simplify form building
-# gem 'simple_form'
+gem 'simple_form'
 # Use will paginate to add continuous scroll to JQuery Masonry
 # gem 'will_paginate', '~> 3.0.5'
 # Use will paginate bootstrap to work with Bootstrap
@@ -141,7 +143,7 @@ gem 'rails_config'
 # Figaro manages environment variables
 gem 'figaro'
 # Use devise for users
-# gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 # Use devise_invitable manages user-to-user invitations
 # gem 'devise_invitable'
 # User model/controller authentication management
@@ -152,6 +154,15 @@ gem 'figaro'
 # gem 'omniauth-twitter'
 # gem 'omniauth-linkedin'
 # gem 'omniauth-google-oauth2'
+
+### ADMIN INTERFACE
+### ===============
+# ActiveAdmin for your backend
+gem 'activeadmin', github: 'gregbell/active_admin'
+# Flatten ActiveAdmin out and make it look better
+gem 'flattened_active_admin'
+# HTML text editing in rails
+gem 'active_admin_editor'
 
 ### DEVELOPMENT
 ### ===========
@@ -176,8 +187,8 @@ group :development, :test do
   ### TESTING
   ### =======
   # use rspec for BDD (behaviour-driven development)
-  # gem 'rspec-rails', '~> 3.0.0'
-  # gem 'guard-rspec'
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'guard-rspec'
   # use Capybara for ABT (automated browser testing)
   # gem 'capybara'
   # spork makes running tests faster by forking the app beforehand

@@ -1,6 +1,6 @@
-# Welcome to the Capsule Digital Template App (doc version 0.0.4)
+# Ampersandwi.ch
 
-Fork this project, then clone your fork to get started.
+The bio page of Isaac Norman
 
 ## Project Details
 
@@ -42,6 +42,8 @@ Environment variables are managed through the Figaro gem. Figaro more consistent
 * To get seamless development happening run 'guard' instead of 'rails s'
 * For first time use, run 'guard init' first
 * To make the most of this rails development setup, dowload [LiveReload][https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en] and [RailsPanel][https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg]
+
+nb// If you don't shut down guard properly, it'll leave zombie processes. YOu can find and kill these processes using 'sudo lsof -iTCP -sTCP:LISTEN -P | grep :3000' and then run 'kill second-number-in-each-column'.
 
 ### Code Backup
 
@@ -94,7 +96,7 @@ If you add files, remembers to include them in their directory's (or sub-directo
 
 ## To Do
 
-* RSpec tests
+* RSpec/Capybara tests
 * Coffee script folder structure
 * Sass default components
 * EC2 & S3 (rubber)
