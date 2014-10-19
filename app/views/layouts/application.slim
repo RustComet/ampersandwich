@@ -15,6 +15,7 @@ html.no-js xml:lang="en" lang="en"
     = javascript_include_tag 'application'
     = growlyflash_static_notices
     = csrf_meta_tags
+    = analytics_init if Rails.env.production?
   body
     = render 'layouts/header'
     = yield

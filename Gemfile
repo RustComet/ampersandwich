@@ -34,6 +34,8 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 # Use delayed job to move loading objects into the background
 # gem 'delayed_job_active_record'
+# Use Sidekiq for background workers
+gem 'sidekiq'
 
 ### FRONT-END (JS)
 ### ================
@@ -128,7 +130,7 @@ gem 'simple_form'
 # Use Stripe to handle payment processing
 # gem 'stripe', git: 'https://github.com/stripe/stripe-ruby'
 # Use Google Analytics to track clicks
-# gem 'google-analytics-rails'
+gem 'google-analytics-rails'
 # Use new relive to monitor application performance
 # gem 'newrelic_rpm'
 # Use Mailchimp for email campaign list management

@@ -14,4 +14,11 @@ class Inquiry < ActiveRecord::Base
 
   # Validations
   validates :name, :email_address, :message, presence: true
+
+  # Hooks
+  after_create :email_admin
+
+  def email_admin
+    EnquiryMailer.delay.enquiry_created(self.id)
+  end
 end
