@@ -19,6 +19,6 @@ class Inquiry < ActiveRecord::Base
   after_create :email_admin
 
   def email_admin
-    EnquiryMailer.delay.enquiry_created(self.id)
+    EnquiryMailer.enquiry_created(self.id)
   end
 end

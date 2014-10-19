@@ -1,0 +1,5 @@
+h5
+| #{@enquiry.try(:name)} (#{@enquiry.try(:email_address)}) submitted some feedback to ampersandwich.
+
+p
+| #{@enquiry.message.html_safe}
